@@ -1,0 +1,8 @@
+my main thoughts for this project is making it reusable, scalable, and accessible. 
+
+Reusable and Scalable - I want to make it so that data can be received from an api to populate the content. This way if there are changes to certain things, or if there are any additions, it would be easier to change it. like a standard template engine, and not using nextjs for its router capabilities, like how it is currently presented. 
+one issue, using nextjs to use a header/navbar as a layout, so certain things have things to do with hydration dont have to be re-rendered. it took up space in the flow of the document, so i went in and gave it a transparent background and position: absolute. this way i can change the background image with the new renders.
+note: i will probably have to deal with this in the future. i may need the flow of that item for the content to flow, or i design the content with some extra padding at the top if the content turns up underneath the navbar. but so far this is the solution i am going with.
+
+accessibility - i will make sure that the html elements are accessible. so i will try to do this markup correctly. for example, be specific such as using <div>, or using <a> as a button and not using role="button" tag.
+

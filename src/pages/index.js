@@ -1,9 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import classes from "./styles.module.css";
 
 export default function Home() {
   return (
@@ -14,7 +10,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>stuff</main>
+      <main className={classes.content}>
+        <h2>SO, YOU WANT TO TRAVEL TO</h2>
+        <h1>SPACE</h1>
+        <p>
+          Let's face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we'll give you a truly out of this world
+          experience!
+        </p>
+        <button>EXPLORE</button>
+      </main>
     </>
   );
 }

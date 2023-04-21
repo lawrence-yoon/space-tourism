@@ -1,4 +1,4 @@
-import CrewContent from "/components/features/CrewContent";
+import CrewContent from "/src/components/features/CrewContent";
 
 function Crew() {
   return (
