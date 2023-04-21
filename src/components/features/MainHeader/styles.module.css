@@ -19,7 +19,8 @@
   align-items: flex-end;
   padding-top: 33px;
   padding-right: 1.5rem;
-  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 4%);
+  backdrop-filter: blur(2rem);
 }
 
 .navigation {
