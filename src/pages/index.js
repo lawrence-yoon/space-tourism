@@ -11,15 +11,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={classes.content}>
-        <h2>SO, YOU WANT TO TRAVEL TO</h2>
-        <h1>SPACE</h1>
-        <p>
-          Let's face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we'll give you a truly out of this world
-          experience!
-        </p>
-        <button>EXPLORE</button>
+        <div className={classes.textContainer}>
+          <h2 className={classes.intro}>SO, YOU WANT TO TRAVEL TO</h2>
+          <h1 className={classes.title}>SPACE</h1>
+          <p className={classes.text}>
+            Let&apos;s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we&apos;ll give you a truly out of
+            this world experience!
+          </p>
+        </div>
+        <button className={classes.button}>EXPLORE</button>
       </main>
     </>
   );

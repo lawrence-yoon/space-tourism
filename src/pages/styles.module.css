@@ -6,9 +6,58 @@
 
 .content {
   background-image: url("/assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 7rem 1.5rem 3rem;
   height: 100vh;
+}
+
+.intro {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: #d0d6f9;
+}
+
+.title {
+  font-family: "Bellefair", serif;
+  font-size: 80px;
+  font-weight: normal;
+  color: white;
+}
+
+.text {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  color: #d0d6f9;
+}
+
+.button {
+  font-family: "Bellefair", serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border-style: none;
+}
+
+@media (768px <= width <= 1439px) {
+  .content {
+    background-image: url("/assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media (1440px <= width) {
+  .content {
+    background-image: url("/assets/home/background-home-desktop.jpg");
+  }
 }

@@ -6,3 +6,4 @@ note: i will probably have to deal with this in the future. i may need the flow 
 
 accessibility - i will make sure that the html elements are accessible. so i will try to do this markup correctly. for example, be specific such as using <div>, or using <a> as a button and not using role="button" tag.
 
+flare - i want to add some scroll snap functionality, maybe some transition animations. some fancy hydration stuff?
