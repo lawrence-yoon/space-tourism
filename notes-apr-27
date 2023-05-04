@@ -1,0 +1,4 @@
+i know that i was not that diligent with this one. its taking me two weeks almost.
+this one should be straight forward, i just know that there are some more peskier tasks to do, such as the carousel slider, as well as resizing images for responsive design. (https://medium.com/tinyso/how-to-create-the-responsive-and-swipeable-carousel-slider-component-in-react-99f433364aa0)
+swipeable and timed carousel would be a gamechanger. staple UI/UX component.
+this carousel will make the content dynamic. also, instead of piping in new state, it will already be ?rendered and it just needs to be moved onto the screen. maybe good? idk.

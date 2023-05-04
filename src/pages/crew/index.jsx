@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import classes from "./styles.module.css";
+import { useState } from "react";
 import data from "../../../public/assets/data.json";
 
 function Crew() {
+  const [crewIndex, setCrewIndex] = useState(0);
   //state needed to render CrewContent with props passed in and nav functionality
   return (
     <>
@@ -18,22 +20,23 @@ function Crew() {
           <h2 className={classes.intro}>02 MEET YOUR CREW</h2>
           <Image
             className={classes.imageContainer}
-            src={data.crew[0].images.png.substring(1)}
+            src={data.crew[crewIndex].images.png.substring(1)}
             alt="logo"
-            width={170}
-            height={170}
+            width={177}
+            height={222}
           />
           <hr />
 
           <div className={classes.navbarDestination}>
-            <button>{data.crew[0].name}</button>
-            <button>{data.crew[1].name}</button>
-            <button>{data.crew[2].name}</button>
-            <button>{data.crew[3].name}</button>
+            {data.crew.map((entry, index) => (
+              <button key={index} onClick={() => setCrewIndex(index)}>
+                {entry.name}
+              </button>
+            ))}
           </div>
-          <h1 className={classes.title}>{data.crew[0].name}</h1>
-          <p className={classes.text}>{data.crew[0].role}</p>
-          <p className={classes.bio}>{data.crew[0].bio}</p>
+          <h1 className={classes.title}>{data.crew[crewIndex].name}</h1>
+          <p className={classes.text}>{data.crew[crewIndex].role}</p>
+          <p className={classes.bio}>{data.crew[crewIndex].bio}</p>
         </article>
       </main>
     </>

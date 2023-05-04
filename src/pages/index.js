@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import classes from "./styles.module.css";
 
 export default function Home() {
@@ -21,7 +22,10 @@ export default function Home() {
             this world experience!
           </p>
         </div>
-        <button className={classes.button}>EXPLORE</button>
+
+        <Link className={classes.button} href="/destination">
+          EXPLORE
+        </Link>
       </main>
     </>
   );

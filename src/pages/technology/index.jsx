@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import classes from "./styles.module.css";
+import { useState } from "react";
 import data from "../../../public/assets/data.json";
 
 function Technology() {
+  const [technologyIndex, setTechnologyIndex] = useState(0);
   return (
     <>
       <Head>
@@ -17,19 +19,25 @@ function Technology() {
           <h2 className={classes.intro}>03 SPACE LAUNCH 101</h2>
           <Image
             className={classes.imageContainer}
-            src={data.technology[0].images.landscape.substring(1)}
+            src={data.technology[technologyIndex].images.landscape.substring(1)}
             alt="logo"
             width={375}
             height={170}
           />
           <div className={classes.navbarDestination}>
-            <button>{data.technology[0].name}</button>
-            <button>{data.technology[1].name}</button>
-            <button>{data.technology[2].name}</button>
+            {data.technology.map((entry, index) => (
+              <button key={index} onClick={() => setTechnologyIndex(index)}>
+                {entry.name}
+              </button>
+            ))}
           </div>
           <p className={classes.text}>THE TERMINOLOGY ...</p>
-          <h1 className={classes.title}>{data.technology[0].name}</h1>
-          <p className={classes.text}>{data.technology[0].description}</p>
+          <h1 className={classes.title}>
+            {data.technology[technologyIndex].name}
+          </h1>
+          <p className={classes.text}>
+            {data.technology[technologyIndex].description}
+          </p>
         </article>
       </main>
     </>

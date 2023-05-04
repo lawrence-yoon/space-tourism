@@ -42,6 +42,9 @@
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Bellefair", serif;
   font-size: 1.25rem;
   letter-spacing: 1px;
@@ -49,6 +52,9 @@
   height: 150px;
   border-radius: 100%;
   border-style: none;
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
 
 @media (768px <= width <= 1439px) {
