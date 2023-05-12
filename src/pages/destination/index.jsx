@@ -28,13 +28,22 @@ function Destination() {
           />
           <div className={classes.navbarDestination}>
             {data.destinations.map((entry, index) => (
-              <button
-                key={index}
-                className={classes.btnNav}
-                onClick={() => setDestinationIndex(index)}
-              >
-                {entry.name.toUpperCase()}
-              </button>
+              <>
+                <button
+                  key={index}
+                  className={`${
+                    index == destinationIndex
+                      ? classes.btnNavActive
+                      : classes.btnNav
+                  }`}
+                  onClick={() => setDestinationIndex(index)}
+                >
+                  {entry.name.toUpperCase()}
+                  {index == destinationIndex ? (
+                    <div className={classes.btnNavActiveBar}></div>
+                  ) : null}
+                </button>
+              </>
             ))}
           </div>
           <div className={classes.textContainer}>

@@ -57,8 +57,9 @@
 .navbarDestination {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
+  z-index: 1;
 }
 
 .btnNav {
@@ -69,7 +70,61 @@
   border: none;
   color: #d0d6f9;
   letter-spacing: 2px;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
+
+.btnNavActive {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.btnNavActiveBar {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 1.75rem;
+  left: 0;
+  z-index: 1;
+}
+
+/* .btnNav:hover {
+  color: #ffffff;
+}
+
+.btnNav:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  top: 1.75rem;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btnNavActive {
+  color: #ffffff;
+}
+
+.btnNav:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
 
 .hRule {
   width: 100%;

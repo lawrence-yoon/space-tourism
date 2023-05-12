@@ -7,11 +7,11 @@
   justify-content: space-between;
   padding: 1.5rem;
   width: 100%;
+  z-index: 2;
 }
 .navigationMobile {
-  position: absolute;
+  position: fixed;
   inset: 0 0 auto auto;
-  z-index: 1;
   height: 100vh;
   width: 67vw;
   display: flex;
