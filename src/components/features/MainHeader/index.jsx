@@ -25,38 +25,40 @@ function MainHeader() {
       </Link>
 
       {isMenuActive ? (
-        <nav className={classes.navigationMobile}>
-          <button className={classes.button} onClick={handleMenuClose}>
-            <Image
-              src="/assets/shared/icon-close.svg"
-              alt="close-icon"
-              width={20}
-              height={20}
-            />
-          </button>
-          <ul className={classes.linksList}>
-            <li>
-              <Link className={classes.link} href="/">
-                <span className={classes.linkIndex}>00</span> HOME
-              </Link>
-            </li>
-            <li>
-              <Link className={classes.link} href="/destination">
-                <span className={classes.linkIndex}>01</span> DESTINATION
-              </Link>
-            </li>
-            <li>
-              <Link className={classes.link} href="/crew">
-                <span className={classes.linkIndex}>02</span> CREW
-              </Link>
-            </li>
-            <li>
-              <Link className={classes.link} href="/technology">
-                <span className={classes.linkIndex}>03</span> TECHNOLOGY
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div onClick={() => setIsMenuActive(false)} className={classes.overlay}>
+          <nav className={classes.navigationMobile}>
+            <button className={classes.button} onClick={handleMenuClose}>
+              <Image
+                src="/assets/shared/icon-close.svg"
+                alt="close-icon"
+                width={20}
+                height={20}
+              />
+            </button>
+            <ul className={classes.linksList}>
+              <li>
+                <Link className={classes.link} href="/">
+                  <span className={classes.linkIndex}>00</span> HOME
+                </Link>
+              </li>
+              <li>
+                <Link className={classes.link} href="/destination">
+                  <span className={classes.linkIndex}>01</span> DESTINATION
+                </Link>
+              </li>
+              <li>
+                <Link className={classes.link} href="/crew">
+                  <span className={classes.linkIndex}>02</span> CREW
+                </Link>
+              </li>
+              <li>
+                <Link className={classes.link} href="/technology">
+                  <span className={classes.linkIndex}>03</span> TECHNOLOGY
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       ) : (
         <button
           className={`${classes.button} ${classes.menu}`}
