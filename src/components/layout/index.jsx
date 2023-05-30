@@ -3,10 +3,10 @@ import MainHeader from "../features/MainHeader";
 
 function Layout({ children }) {
   return (
-    <div className={classes.container}>
+    <>
       <MainHeader />
-      <main>{children}</main>
-    </div>
+      <div className={classes.container}>{children}</div>
+    </>
   );
 }
 

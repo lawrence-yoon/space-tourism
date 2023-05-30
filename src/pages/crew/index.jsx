@@ -18,24 +18,34 @@ function Crew() {
       <main className={classes.content}>
         <article className={classes.textContainer}>
           <h2 className={classes.intro}>02 MEET YOUR CREW</h2>
-          <Image
-            className={classes.imageContainer}
-            src={data.crew[crewIndex].images.png.substring(1)}
-            alt="logo"
-            width={177}
-            height={222}
-          />
-          <hr />
+          <div>
+            <Image
+              className={classes.imageContainer}
+              src={data.crew[crewIndex].images.png.substring(1)}
+              alt="logo"
+              width={177}
+              height={222}
+            />
+            <hr className={classes.hRule} />
+          </div>
 
           <div className={classes.navbarDestination}>
             {data.crew.map((entry, index) => (
-              <button key={index} onClick={() => setCrewIndex(index)}>
-                {entry.name}
-              </button>
+              <button
+                className={classes.navbarDots}
+                key={index}
+                onClick={() => setCrewIndex(index)}
+              ></button>
             ))}
           </div>
-          <h1 className={classes.title}>{data.crew[crewIndex].name}</h1>
-          <p className={classes.text}>{data.crew[crewIndex].role}</p>
+          <div>
+            <p className={classes.text}>
+              {data.crew[crewIndex].role.toUpperCase()}
+            </p>
+            <h1 className={classes.title}>
+              {data.crew[crewIndex].name.toUpperCase()}
+            </h1>
+          </div>
           <p className={classes.bio}>{data.crew[crewIndex].bio}</p>
         </article>
       </main>
