@@ -32,7 +32,11 @@ function Crew() {
           <div className={classes.navbarDestination}>
             {data.crew.map((entry, index) => (
               <button
-                className={classes.navbarDots}
+                className={`${
+                  index == crewIndex
+                    ? classes.navbarDotsActive
+                    : classes.navbarDots
+                }`}
                 key={index}
                 onClick={() => setCrewIndex(index)}
               ></button>
