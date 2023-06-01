@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 5.5rem 1.5rem 3rem;
+  padding: 5.5rem 0 3rem;
   height: 100vh;
   overflow: auto;
 }
@@ -39,7 +39,7 @@
 
 .imageContainer {
   position: relative;
-  height: 222px;
+  height: 170px;
 }
 
 .title {
@@ -48,6 +48,12 @@
   font-weight: normal;
   color: white;
   line-height: normal;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .text {
@@ -62,6 +68,7 @@
   font-size: 15px;
   line-height: 2;
   color: #d0d6f9;
+  padding: 0 1.5rem;
 }
 
 .navbar {

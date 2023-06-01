@@ -44,10 +44,12 @@ function Technology() {
               </button>
             ))}
           </div>
-          <p className={classes.text}>THE TERMINOLOGY ...</p>
-          <h1 className={classes.title}>
-            {data.technology[technologyIndex].name.toUpperCase()}
-          </h1>
+          <div className={classes.infoContainer}>
+            <p className={classes.text}>THE TERMINOLOGY ...</p>
+            <h1 className={classes.title}>
+              {data.technology[technologyIndex].name.toUpperCase()}
+            </h1>
+          </div>
           <p className={classes.text2}>
             {data.technology[technologyIndex].description}
           </p>
