@@ -17,15 +17,18 @@ function Crew() {
       </Head>
       <main className={classes.content}>
         <article className={classes.textContainer}>
-          <h2 className={classes.intro}>02 MEET YOUR CREW</h2>
+          <h2 className={classes.intro}>
+            <span className={classes.dirIndex}>02</span>MEET YOUR CREW
+          </h2>
           <div>
-            <Image
-              className={classes.imageContainer}
-              src={data.crew[crewIndex].images.png.substring(1)}
-              alt="logo"
-              width={177}
-              height={222}
-            />
+            <div className={classes.imageContainer}>
+              <Image
+                className={classes.image}
+                src={data.crew[crewIndex].images.png.substring(1)}
+                alt="logo"
+                fill
+              />
+            </div>
             <hr className={classes.hRule} />
           </div>
 

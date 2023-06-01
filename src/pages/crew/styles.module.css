@@ -21,6 +21,15 @@
   gap: 2rem;
 }
 
+.dirIndex {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  opacity: 0.25;
+  letter-spacing: 3px;
+  margin-right: 1rem;
+}
+
 .intro {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
@@ -29,8 +38,13 @@
   color: #d0d6f9;
 }
 
+.image {
+  object-fit: contain;
+}
+
 .imageContainer {
-  margin: 0 auto;
+  position: relative;
+  height: 222px;
 }
 
 .title {
