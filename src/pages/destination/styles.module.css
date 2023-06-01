@@ -1,18 +1,21 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .content {
   background-image: url("/assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  height: 100vh;
   padding: 5.5rem 1.5rem 3rem;
-  height: 100%;
+  overflow: auto;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .dirIndex {

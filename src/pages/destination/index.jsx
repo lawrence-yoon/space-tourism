@@ -15,7 +15,7 @@ function Destination() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={classes.content}>
-        <article className={classes.container}>
+        <article className={classes.container2}>
           <h2 className={classes.intro}>
             <span className={classes.dirIndex}>01</span>PICK YOUR DESTINATION
           </h2>
