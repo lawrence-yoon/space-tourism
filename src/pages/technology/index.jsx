@@ -16,26 +16,39 @@ function Technology() {
       </Head>
       <main className={classes.content}>
         <article className={classes.textContainer}>
-          <h2 className={classes.intro}>03 SPACE LAUNCH 101</h2>
-          <Image
-            className={classes.imageContainer}
-            src={data.technology[technologyIndex].images.landscape.substring(1)}
-            alt="logo"
-            width={375}
-            height={170}
-          />
-          <div className={classes.navbarDestination}>
+          <h2 className={classes.intro}>
+            <span className={classes.dirIndex}>03</span>SPACE LAUNCH 101
+          </h2>
+          <div className={classes.imageContainer}>
+            <Image
+              className={classes.image}
+              src={data.technology[technologyIndex].images.landscape.substring(
+                1
+              )}
+              alt="logo"
+              fill
+            />
+          </div>
+          <div className={classes.navbar}>
             {data.technology.map((entry, index) => (
-              <button key={index} onClick={() => setTechnologyIndex(index)}>
-                {entry.name}
+              <button
+                className={`${
+                  index == technologyIndex
+                    ? classes.btnNavActive
+                    : classes.btnNav
+                }`}
+                key={index}
+                onClick={() => setTechnologyIndex(index)}
+              >
+                {index + 1}
               </button>
             ))}
           </div>
           <p className={classes.text}>THE TERMINOLOGY ...</p>
           <h1 className={classes.title}>
-            {data.technology[technologyIndex].name}
+            {data.technology[technologyIndex].name.toUpperCase()}
           </h1>
-          <p className={classes.text}>
+          <p className={classes.text2}>
             {data.technology[technologyIndex].description}
           </p>
         </article>
