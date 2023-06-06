@@ -3,10 +3,20 @@ import Image from "next/image";
 import classes from "./styles.module.css";
 import { useState } from "react";
 import data from "../../../public/assets/data.json";
+import { useSwipeable } from "react-swipeable";
 
 function Crew() {
   const [crewIndex, setCrewIndex] = useState(0);
   //state needed to render CrewContent with props passed in and nav functionality
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (crewIndex != 3) setCrewIndex(crewIndex + 1);
+    },
+    onSwipedRight: () => {
+      if (crewIndex != 0) setCrewIndex(crewIndex - 1);
+    },
+  });
   return (
     <>
       <Head>
@@ -16,7 +26,7 @@ function Crew() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={classes.content}>
-        <article className={classes.textContainer}>
+        <article {...handlers} className={classes.textContainer}>
           <h2 className={classes.intro}>
             <span className={classes.dirIndex}>02</span>MEET YOUR CREW
           </h2>
