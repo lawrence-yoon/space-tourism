@@ -3,9 +3,18 @@ import Image from "next/image";
 import classes from "./styles.module.css";
 import { useState } from "react";
 import data from "../../../public/assets/data.json";
+import { useSwipeable } from "react-swipeable";
 
 function Technology() {
   const [technologyIndex, setTechnologyIndex] = useState(0);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (technologyIndex != 2) setTechnologyIndex(technologyIndex + 1);
+    },
+    onSwipedRight: () => {
+      if (technologyIndex != 0) setTechnologyIndex(technologyIndex - 1);
+    },
+  });
   return (
     <>
       <Head>
@@ -15,7 +24,7 @@ function Technology() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={classes.content}>
-        <article className={classes.textContainer}>
+        <article {...handlers} className={classes.textContainer}>
           <h2 className={classes.intro}>
             <span className={classes.dirIndex}>03</span>SPACE LAUNCH 101
           </h2>

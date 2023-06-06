@@ -3,9 +3,18 @@ import Image from "next/image";
 import { useState } from "react";
 import data from "../../../public/assets/data.json";
 import classes from "./styles.module.css";
+import { useSwipeable } from "react-swipeable";
 
 function Destination() {
   const [destinationIndex, setDestinationIndex] = useState(0);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (destinationIndex != 3) setDestinationIndex(destinationIndex + 1);
+    },
+    onSwipedRight: () => {
+      if (destinationIndex != 0) setDestinationIndex(destinationIndex - 1);
+    },
+  });
   return (
     <>
       <Head>
@@ -15,7 +24,7 @@ function Destination() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={classes.content}>
-        <article className={classes.container2}>
+        <article {...handlers} className={classes.container2}>
           <h2 className={classes.intro}>
             <span className={classes.dirIndex}>01</span>PICK YOUR DESTINATION
           </h2>
