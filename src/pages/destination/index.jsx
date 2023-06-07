@@ -18,7 +18,7 @@ function Destination() {
   return (
     <>
       <Head>
-        <title>Space Tourism</title>
+        <title>Destination - Space Tourism</title>
         <meta name="description" content="Explore Space - Destination" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -31,7 +31,7 @@ function Destination() {
           <Image
             className={classes.imageContainer}
             src={data.destinations[destinationIndex].images.png.substring(1)}
-            alt="logo"
+            alt={data.destinations[destinationIndex].name}
             width={170}
             height={170}
           />

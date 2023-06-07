@@ -76,22 +76,22 @@ function MainHeader() {
         <ul className={classes.linksList}>
           <li>
             <Link className={classes.link} href="/">
-              00 HOME
+              <span className={classes.linkIndex}>00</span> HOME
             </Link>
           </li>
           <li>
             <Link className={classes.link} href="/destination">
-              01 DESTINATION
+              <span className={classes.linkIndex}>01</span> DESTINATION
             </Link>
           </li>
           <li>
             <Link className={classes.link} href="/crew">
-              02 CREW
+              <span className={classes.linkIndex}>02</span> CREW
             </Link>
           </li>
           <li>
             <Link className={classes.link} href="/technology">
-              03 TECHNOLOGY
+              <span className={classes.linkIndex}>03</span> TECHNOLOGY
             </Link>
           </li>
         </ul>
