@@ -15,15 +15,17 @@ function MainHeader() {
 
   return (
     <header className={classes.header}>
-      <Link href="/">
-        <Image
-          src="/assets/shared/logo.svg"
-          alt="logo"
-          width={40}
-          height={40}
-        />
-      </Link>
-
+      <div className={classes.logoContainer}>
+        <Link href="/">
+          <Image
+            src="/assets/shared/logo.svg"
+            alt="logo"
+            className={classes.logo}
+            fill
+          />
+        </Link>
+      </div>
+      <hr className={classes.headerHR} />
       {isMenuActive ? (
         <div onClick={() => setIsMenuActive(false)} className={classes.overlay}>
           <nav className={classes.navigationMobile}>

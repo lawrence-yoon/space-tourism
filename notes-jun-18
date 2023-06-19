@@ -1,0 +1,4 @@
+okay, nearing the last bits of the project. last media breakout, but its going to be different.
+will have some animated portions
+header and navbar will have significant changes. looks like i can reuse some code like the carousel indicator underline thing like i made for staff. might consider an animation for it, like a nice sliding feature.
+layouts look more 2d, i will try to get away with flexbox but will consider grid if its necessary.

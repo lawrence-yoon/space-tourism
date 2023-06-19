@@ -10,6 +10,21 @@
   z-index: 2;
 }
 
+.headerHR {
+  display: none;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.logoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -95,6 +110,48 @@
 }
 
 @media (1440px <= width) {
+  .header {
+    padding: 40px 0 0 55px;
+  }
+  .headerHR {
+    display: inline-block;
+    border: none;
+    border-top: solid 1px #979797;
+    margin: 0;
+    /* color: white; */
+    width: 42vw;
+    position: absolute;
+    left: 10.5rem;
+    z-index: 5;
+  }
+  .logoContainer {
+    width: 48px;
+    height: 48px;
+  }
+  .navigationMobile {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .linksList {
+    flex-direction: row;
+    align-items: center;
+    padding: 2.5rem 9rem;
+    background-color: rgba(255, 255, 255, 4%);
+    backdrop-filter: blur(2rem);
+    max-height: 96px;
+
+    gap: 3rem;
+  }
+  .linkIndex {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .link {
+  }
 }
 
 /* need active link state. padding and border bottom for underline */
