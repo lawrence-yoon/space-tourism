@@ -75,6 +75,7 @@ function MainHeader() {
         </button>
       )}
       <nav className={classes.navigation}>
+        <hr className={classes.navHR} />
         <ul className={classes.linksList}>
           <li>
             <Link className={classes.link} href="/">
