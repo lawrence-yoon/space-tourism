@@ -115,32 +115,6 @@
   z-index: 1;
 }
 
-/* .btnNav:hover {
-  color: #ffffff;
-}
-
-.btnNav:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  top: 1.75rem;
-  left: 0;
-  background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.btnNavActive {
-  color: #ffffff;
-}
-
-.btnNav:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-} */
-
 .hRule {
   width: 100%;
   height: 1px;
@@ -202,10 +176,28 @@
   }
   .descriptionContainer {
     max-width: 445px;
-    gap: 2rem;
-    justify-content: center;
+    gap: 3rem;
+    padding-top: 5rem;
   }
+
   .navbarDestination {
     justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 100px;
+    margin-bottom: 2rem;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .detailsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 6rem;
+  }
+  .btnNav,
+  .btnNavActive {
+    font-size: 1rem;
   }
 }
