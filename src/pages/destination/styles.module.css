@@ -8,7 +8,7 @@
   flex-direction: column;
   text-align: center;
   height: 100vh;
-  padding: 5.5rem 1.5rem 3rem;
+  padding: 13.25rem 10.375rem 3rem;
   overflow: auto;
 }
 
@@ -26,7 +26,10 @@
   letter-spacing: 3px;
   margin-right: 1rem;
 }
-
+.introContainer {
+  display: flex;
+  flex-direction: column;
+}
 .intro {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
@@ -35,10 +38,19 @@
   color: #d0d6f9;
 }
 
-.imageContainer {
+.image {
   margin: 0 auto;
 }
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  height: 170px;
+}
 
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
 .textContainer {
 }
 
@@ -169,5 +181,31 @@
 @media (1440px <= width) {
   .content {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
+    text-align: left;
+  }
+  .container2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .introContainer {
+    gap: 97px;
+  }
+  .intro {
+    font-size: 28px;
+  }
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    height: 445px;
+    width: 445px;
+    margin-left: 4rem;
+  }
+  .descriptionContainer {
+    max-width: 445px;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .navbarDestination {
+    justify-content: flex-start;
   }
 }
