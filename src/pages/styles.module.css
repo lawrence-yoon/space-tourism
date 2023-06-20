@@ -66,24 +66,35 @@
 @media (1440px <= width) {
   .content {
     background-image: url("/assets/home/background-home-desktop.jpg");
+    padding-top: 24.25rem;
+    padding-left: 165px;
+    padding-right: 165px;
+    flex-direction: row;
   }
-  /* .textContainer {
+  .textContainer {
+    max-width: 450px;
+  }
 
-  }
-  
   .intro {
-
+    font-size: 28px;
   }
-  
+
   .title {
-
+    font-size: 150px;
   }
-  
+
   .text {
-
+    font-size: 18px;
   }
-  
-  .button {
 
-  } */
+  .button {
+    width: 274px;
+    height: 274px;
+    font-size: 32px;
+    outline: solid 1px rgba(255, 255, 255, 15%);
+    transition: outline 0.6s linear;
+  }
+  .button:hover {
+    outline-width: 5.5rem;
+  }
 }
