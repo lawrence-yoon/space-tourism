@@ -51,8 +51,6 @@
   display: flex;
   flex-direction: column;
 }
-.textContainer {
-}
 
 .title {
   font-family: "Bellefair", serif;
@@ -127,9 +125,6 @@
   font-size: 1.75rem;
   font-weight: normal;
   color: white;
-}
-
-.detailsPair {
 }
 
 .detailLabel {

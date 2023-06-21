@@ -108,8 +108,6 @@
   .menu {
     display: none;
   }
-  .link {
-  }
 }
 
 @media (1440px <= width) {
@@ -160,8 +158,6 @@
   }
   .menu {
     display: none;
-  }
-  .link {
   }
 }
 

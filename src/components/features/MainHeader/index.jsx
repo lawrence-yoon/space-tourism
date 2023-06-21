@@ -41,6 +41,7 @@ function MainHeader() {
               <li>
                 <Link className={classes.link} href="/">
                   <span className={classes.linkIndex}>00</span> HOME
+                  {/* this is where the navbar bar will possibly go... of course this would apply to all 4 buttons on this nav. will need to have state of route is active...*/}
                 </Link>
               </li>
               <li>
