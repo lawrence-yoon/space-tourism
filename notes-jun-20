@@ -1,0 +1,7 @@
+ok so this project is mostly done now, just need to add
+
+hover states to navbar buttons
+selected link underlined
+need to change the default hover over a link, to change into a hand
+fix destination page? ive added divs and it really messed up mobile and tablet breakouts. maybe even just delete those two things and redo with grid...
+i think that would be it. make sure all the breakouts work.

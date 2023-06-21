@@ -227,7 +227,7 @@
     height: 15px;
   }
   .navbarDots:hover {
-    opacity: 100%;
+    opacity: 50%;
   }
   .navbarDestination {
     gap: 1.5rem;

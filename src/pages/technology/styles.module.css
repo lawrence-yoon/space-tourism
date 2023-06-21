@@ -211,6 +211,9 @@
     height: 80px;
     font-size: 32px;
   }
+  .btnNav:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
   .infoContainer {
     grid-area: 2/2/3/3;
     padding-left: 80px;
