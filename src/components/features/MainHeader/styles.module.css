@@ -67,6 +67,7 @@
 }
 
 .link {
+  position: relative;
   text-decoration: none;
   color: white;
   word-spacing: 0.25rem;
@@ -143,6 +144,25 @@
   .navigation {
     display: flex;
   }
+  .linkIndexBar {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 3.375rem;
+    left: 0;
+    z-index: 1;
+  }
+  .linkIndexBarHover {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 50%;
+    position: absolute;
+    top: 3.375rem;
+    left: 0;
+    z-index: 1;
+  }
   .linksList {
     flex-direction: row;
     align-items: center;
@@ -150,7 +170,6 @@
     background-color: rgba(255, 255, 255, 4%);
     backdrop-filter: blur(2rem);
     max-height: 96px;
-
     gap: 3.625rem;
   }
   .linkIndex {

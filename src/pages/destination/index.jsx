@@ -7,6 +7,7 @@ import { useSwipeable } from "react-swipeable";
 
 function Destination() {
   const [destinationIndex, setDestinationIndex] = useState(0);
+  const [destinationIndexHover, setDestinationIndexHover] = useState(null);
   const handlers = useSwipeable({
     onSwipedLeft: () => {
       if (destinationIndex != 3) setDestinationIndex(destinationIndex + 1);
@@ -47,10 +48,15 @@ function Destination() {
                       : classes.btnNav
                   }`}
                   onClick={() => setDestinationIndex(index)}
+                  onMouseOver={() => setDestinationIndexHover(index)}
+                  onMouseOut={() => setDestinationIndexHover(null)}
                 >
                   {entry.name.toUpperCase()}
                   {index == destinationIndex ? (
                     <div className={classes.btnNavActiveBar}></div>
+                  ) : null}
+                  {index == destinationIndexHover ? (
+                    <div className={classes.btnNavActiveBarHover}></div>
                   ) : null}
                 </button>
               </>
