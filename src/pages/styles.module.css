@@ -69,13 +69,16 @@
 @media (1440px <= width) {
   .content {
     background-image: url("/assets/home/background-home-desktop.jpg");
-    padding-top: 24.25rem;
+    padding-top: 387px;
     padding-left: 165px;
     padding-right: 165px;
+    padding-bottom: 0;
     flex-direction: row;
   }
   .textContainer {
     max-width: 450px;
+    text-align: left;
+    height: 100%;
   }
 
   .intro {
