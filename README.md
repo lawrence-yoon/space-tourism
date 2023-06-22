@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/Screenshot from 2023-06-22 08-51-21.png)
+![](../public/assets/screenshots/Screenshot from 2023-06-22 08-51-21.png)
 
 ### Links
 
