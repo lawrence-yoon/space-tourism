@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/spacetourismnextjsstyledcomponents-W5TWmE9HSO)
 - Live Site URL: [Vercel Deployment](https://space-tourism-three-rouge.vercel.app/)
 
 ## My process
