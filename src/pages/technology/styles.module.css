@@ -36,6 +36,9 @@
 .image {
   object-fit: cover;
 }
+.image2 {
+  display: none;
+}
 
 .imageContainer {
   display: flex;
@@ -147,6 +150,10 @@
     text-align: left;
     margin-left: 39px;
   }
+  .image {
+    object-fit: fill;
+  }
+
   .imageContainer {
     height: 30vh;
   }
@@ -199,6 +206,10 @@
     justify-self: end;
   }
   .image {
+    display: none;
+  }
+  .image2 {
+    display: block;
     height: auto;
   }
   .navbar {

@@ -34,19 +34,15 @@ function Technology() {
               src={data.technology[technologyIndex].images.landscape.substring(
                 1
               )}
-              // srcSet={data.technology[technologyIndex].images.portrait.substring(
-              //   1
-              // )} 1440w
               alt={data.technology[technologyIndex].name}
               fill
             />
             <Image
-              className={classes.image}
+              className={classes.image2}
               src={data.technology[technologyIndex].images.portrait.substring(
                 1
               )}
               alt={data.technology[technologyIndex].name}
-              media="(min-width: 1440px)"
               fill
             />
           </div>

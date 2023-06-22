@@ -8,13 +8,14 @@
   flex-direction: column;
   text-align: center;
   height: 100vh;
-  padding: 13.25rem 10.375rem 3rem;
+  padding: 78px 24px 64px 24px;
   overflow: auto;
 }
 
 .container2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -36,6 +37,7 @@
   font-weight: normal;
   letter-spacing: 3px;
   color: #d0d6f9;
+  white-space: nowrap;
 }
 
 .image {
@@ -44,6 +46,7 @@
 .imageContainer {
   position: relative;
   overflow: hidden;
+  min-width: 170px;
   height: 170px;
 }
 
@@ -155,6 +158,23 @@
 @media (768px <= width <= 1439px) {
   .content {
     background-image: url("/assets/destination/background-destination-tablet.jpg");
+    padding: 136px 39px 64px 39px;
+  }
+  .container2 {
+    gap: 64px;
+  }
+  .intro {
+    align-self: flex-start;
+  }
+  .imageContainer {
+    min-width: 300px;
+    min-height: 300px;
+  }
+  .title {
+    font-size: 80px;
+  }
+  .detailsContainer {
+    flex-direction: row;
   }
 }
 
@@ -162,6 +182,7 @@
   .content {
     background-image: url("/assets/destination/background-destination-desktop.jpg");
     text-align: left;
+    padding: 212px 166px 96px;
   }
   .container2 {
     display: grid;

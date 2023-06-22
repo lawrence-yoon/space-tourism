@@ -6,3 +6,10 @@ handleMouseOut={()=>linkIndexHover(false)}
 {linkIndexHover?div.linkIndexBarHover:null}
 
 this project does not have consistent styling. might be an issue later. using state to keep track of mouse events vs just applying a hover css pseudoclass may complicate things in the future.
+
+applied solution, works like a charm.
+
+now i have to revise tablet breakouts. also going to check mobile version. hopefully its an easy fix.
+
+destination mobile and tablet is broken
+technology tablet is broken
