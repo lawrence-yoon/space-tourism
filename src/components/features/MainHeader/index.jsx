@@ -18,7 +18,7 @@ function MainHeader() {
   return (
     <header className={classes.header}>
       <div className={classes.logoContainer}>
-        <Link href="/">
+        <Link href="/" onClick={() => setLinkIndex(0)}>
           <Image
             src="/assets/shared/logo.svg"
             alt="logo"
