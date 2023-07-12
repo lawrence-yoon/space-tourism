@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import classes from "./styles.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 function MainHeader() {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -15,10 +16,51 @@ function MainHeader() {
     setIsMenuActive(false);
   }
 
+  const pathName = usePathname();
+  function pathIndex(path) {
+    const pathString = path.replace("/", "");
+
+    return pathString;
+    // switch (pathString) {
+    //   case "":
+    //     return 0;
+    //   case "destination":
+    //     return 1;
+    //   case "crew":
+    //     return 2;
+    //   case "technology":
+    //     return 3;
+    // }
+  }
+  // const pathIndex =
+
+  useEffect(() => {
+    // setLinkIndex(pathIndex)
+    // console.log(pathIndex(pathName));
+    switch (pathIndex(pathName)) {
+      case "":
+        setLinkIndex(0);
+        // console.log("we are at ROOT");
+        break;
+      case "destination":
+        setLinkIndex(1);
+        // console.log("we are at DESTINATION");
+        break;
+      case "crew":
+        setLinkIndex(2);
+        // console.log("we are at CREW");
+        break;
+      case "technology":
+        setLinkIndex(3);
+        // console.log("we are at technology");
+        break;
+    }
+  });
+
   return (
     <header className={classes.header}>
       <div className={classes.logoContainer}>
-        <Link href="/" onClick={() => setLinkIndex(0)}>
+        <Link href="/">
           <Image
             src="/assets/shared/logo.svg"
             alt="logo"
@@ -84,7 +126,6 @@ function MainHeader() {
             <Link
               key="0"
               className={classes.link}
-              onClick={() => setLinkIndex(0)}
               onMouseOver={() => setLinkIndexHover(0)}
               onMouseOut={() => setLinkIndexHover(null)}
               href="/"
@@ -102,7 +143,6 @@ function MainHeader() {
             <Link
               key="1"
               className={classes.link}
-              onClick={() => setLinkIndex(1)}
               onMouseOver={() => setLinkIndexHover(1)}
               onMouseOut={() => setLinkIndexHover(null)}
               href="/destination"
@@ -120,7 +160,6 @@ function MainHeader() {
             <Link
               key="2"
               className={classes.link}
-              onClick={() => setLinkIndex(2)}
               onMouseOver={() => setLinkIndexHover(2)}
               onMouseOut={() => setLinkIndexHover(null)}
               href="/crew"
@@ -138,7 +177,6 @@ function MainHeader() {
             <Link
               key="3"
               className={classes.link}
-              onClick={() => setLinkIndex(3)}
               onMouseOver={() => setLinkIndexHover(3)}
               onMouseOut={() => setLinkIndexHover(null)}
               href="/technology"
